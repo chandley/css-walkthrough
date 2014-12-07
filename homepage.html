@@ -3,15 +3,65 @@
   <head>
     <title>Github Landing Page</title>
     <style>
+      body {
+        margin: 0;
+      }
+      header {
+        display: flex;
+      }
+      .left {
+        flex: 1 65%;
+      }
+      .right {
+        flex: 1 35%;
+      }
+      .right nav, .right button{
+        flex: auto;
+      }
     </style>
   </head>
   <body>
     <header>
-      <img class='github-logo'>
+      <img class='github-logo' src='http://github.com/logo'>
       <form class='search'>
         <input type='text' class='query'>
       </form>
+      <div class='right'>
+      <nav>
+        <a href='#'>Explore</a>
+        <a href='#'>Features</a>
+        <a href='#'>Enterprise</a>
+        <a href='#'>Blog</a>
+      </nav>
+
+      <button>Sign in</button>
+    </div>
+   
     </header>
+
+    <section class='intro'>
+      <div class='blurb'>
+        <h1>Build software better, together.</h1>
+        <p>Powerful collaboration, code review and code management for open source and private projects.  Need private repositories?</p>
+        <a href='#'>
+          Upgraded plans start at $7/mo.
+        </a>
+      </div>
+
+      <div class='sign-up'>
+        <form>
+          <input text='text' name='username'>
+          <input text='text' name='email'>
+          <input text='text' name='password'>
+
+          <p>Use at least one lowercase letter, one numeral, and seven characters.</p>
+
+          <button type='submit'>Sign up for Github</button>
+
+          <p>By clicking "Sign up for Github", you agree to our terms of service and privacy policy.</p>
+        </form>
+      </div>
+    </section>
     <!-- page content -->
   </body>
 </html>
