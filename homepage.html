@@ -5,9 +5,34 @@
     <style>
       body {
         margin: 0;
+        font-family: 'Helvetica, arial, free sans, clean, sans-serif'
       }
       header {
         display: flex;
+        background: yellow;
+        height: 68px;
+        padding: 15px 15px;
+      }
+      .query {
+        margin-left: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 1px #ddd;
+        width: 200px;
+        font-size: 13px;
+        transition: width  0.5s ease;
+      }
+       .query:hover {
+          width: 400px; 
+      } 
+      .query:focus {
+        width: 400px;
+      }     
+      .github-logo {
+        width: 90px;
+      }
+      .search {
+        width: 90px;
       }
       .left {
         flex: 1 65%;
@@ -18,9 +43,24 @@
       .right nav, .right button{
         flex: auto;
       }
+      .intro {
+        background: red;
+        display: flex;
+      }
+      .blurb {
+        flex: 60%;
+      }
+      .sign-up {
+        flex: 40%;
+      }
+      .Sign-up input[type=text] {
+        display: block;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
+    
     <header>
       <img class='github-logo' src='http://github.com/logo'>
       <form class='search'>
@@ -35,6 +75,7 @@
       </nav>
 
       <button>Sign in</button>
+      <input type='text' class='query' placeholder='Search or type a command'>
     </div>
    
     </header>
@@ -62,6 +103,8 @@
         </form>
       </div>
     </section>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+
     <!-- page content -->
   </body>
 </html>
